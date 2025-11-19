@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Bus Travels Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>Royal Bus Travels Ticket Booking</h1>
+
+    <form class="booking-form">
+      <label for="passenger">Passenger Name:</label>
+      <input type="text" id="passenger" placeholder="Enter your name" required>
+
+      <label for="date">Travel Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Departure Time:</label>
+      <select id="time">
+        <option value="08:00">08:00 AM</option>
+        <option value="12:00">12:00 PM</option>
+        <option value="16:00">04:00 PM</option>
+      </select>
+
+      <label for="seat">Seat Number:</label>
+      <input type="number" id="seat" min="1" max="40" placeholder="Choose a seat" required>
+
+      <fieldset>
+        <legend>Bus Services:</legend>
+        <label><input type="checkbox" id="drinks"> Drinks ($2)</label>
+        <label><input type="checkbox" id="meals"> Meals ($5)</label>
+      </fieldset>
+
+      <button type="submit">Book Ticket</button>
+    </form>
+  </div>
+</body>
+</html>
